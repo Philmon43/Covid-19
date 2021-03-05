@@ -8,14 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
     <div class="main">
         <div class="container__main">
-            <div class="main__title"></div>
-            <div class="main__graph"></div>
+            <div class="main__title">
+                <h2 class="current_title">Confirmed territories in total</h2>
+            </div>
+            <div class="main__graph">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div class="side__bar">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eaque qui, magnam error tenetur asperiores suscipit provident voluptatum officiis consequuntur.</h2>
         </div>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
