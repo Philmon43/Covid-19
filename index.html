@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    
+
 </head>
+
 <body>
     <div class="main">
         <div class="container__main">
             <div class="main__title">
-                <h2 class="current_title">Confirmed territories in total</h2>
+                <h2 class="current_title"><span class="country_name"></h2>
             </div>
             <div class="main__graph">
                 <canvas id="myChart"></canvas>
             </div>
+            <div class="regions"></div>
+            <div class="current__region"></div>
         </div>
         <div class="side__bar">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eaque qui, magnam error tenetur asperiores suscipit provident voluptatum officiis consequuntur.</h2>
+            <div class="stats">
+                <div class="boxes active">
+                    <i class="fas fa-hospital"></i>
+                    <p>Active</p>
+                    <h4> </h4>
+                </div>
+                <div class="boxes confirmed">
+                    <i class="fas fa-hospital"></i>
+                    <p>Confirmed</p>
+                    <h4> </h4>
+                </div>
+                <div class="boxes recovered">
+                    <i class="far fa-heart"><span>+</span></i>
+                    <p>Recovered</p>
+                    <h4> </h4>
+                </div>
+                <div class="boxes critical">
+                    <i class="fa fa-warning"></i>
+                    <p>Critical</p>
+                    <h4> </h4>
+                </div>
+                <div class="boxes deaths">
+                    <i class="fas fa-bed"></i>
+                    <p>Deaths</p>
+                    <h4> </h4>
+                </div>
+            </div>
         </div>
     </div>
-    
+    <div class="spiner">
+        <div class="circle"></div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
