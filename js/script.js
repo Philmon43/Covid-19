@@ -160,7 +160,7 @@ const onCountry = async () => {
         delete latest.calculated
         latest.active = latest.confirmed - latest.recovered
         updateSideBar.apply(null, Object.entries(response.data.latest_data));
-        obj.countryName.innerText = e.target.className + " Covid19 Graph"
+        obj.countryName.innerText = response.data.name + " Covid19 Graph"
         spinerOff()
     });
 }
