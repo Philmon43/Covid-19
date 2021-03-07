@@ -108,14 +108,15 @@
     background: rgba(51, 51, 51, 0.3);
     display: none;
 }
-.regions{
+
+.regions {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.current__region a{
+.current__region a {
     margin: 1px;
     padding: 1px;
     cursor: pointer;
@@ -124,16 +125,18 @@
     text-decoration: dashed;
     overflow-wrap: break-word;
 }
-.current__region a:hover{
+
+.current__region a:hover {
     border-bottom: 1px solid;
 }
 
-.regions button{
+.regions button {
     padding: 10px 15px;
     margin: 0 5px;
     outline: none;
     width: 100%;
 }
+
 .circle {
     width: 60px;
     height: 60px;
@@ -179,7 +182,22 @@
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 10px;
     }
-    .boxes{
+
+    .boxes {
         height: 100%;
+    }
+
+    .stats *, .current__region a{
+        font-size: 10px;
+    }
+
+    .regions *{
+        font-size: 8px;
+        padding: 0;
+        margin: 0;
+    }
+    #myChart{
+        width: 400;
+        height: 400;
     }
 }
