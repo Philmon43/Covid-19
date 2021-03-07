@@ -16,7 +16,7 @@ const renderData = (labels, data, total) => {
         data: {
             labels: labels,
             datasets: [{
-                label: " of " + total,
+                label: " of " + total + " Total confirmed cases",
                 data,
                 backgroundColor: ['rgba(255, 99, 132, 0.2)'],
                 borderColor: ['rgba(255, 99, 132, 1)'],
